@@ -1,0 +1,30 @@
+!SESSION 2018-05-30 12:07:00.301 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_172
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -eclipse.keyring /var/folders/t6/mby7t2vs7hb6k9_gckdywy_80000gn/T/tycho3550446926916114719secure_storage
+Command-line arguments:  -eclipse.keyring /var/folders/t6/mby7t2vs7hb6k9_gckdywy_80000gn/T/tycho3550446926916114719secure_storage
+
+!ENTRY org.eclipse.core.net 1 0 2018-05-30 12:07:00.301
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2018-05-30 13:35:59.008 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_172
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -eclipse.keyring /var/folders/t6/mby7t2vs7hb6k9_gckdywy_80000gn/T/tycho1553955217631215070secure_storage
+Command-line arguments:  -eclipse.keyring /var/folders/t6/mby7t2vs7hb6k9_gckdywy_80000gn/T/tycho1553955217631215070secure_storage
+
+!ENTRY org.eclipse.core.net 1 0 2018-05-30 13:35:59.008
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2018-05-30 13:52:48.695 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_172
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -eclipse.keyring /var/folders/t6/mby7t2vs7hb6k9_gckdywy_80000gn/T/tycho1520086295680766878secure_storage
+Command-line arguments:  -eclipse.keyring /var/folders/t6/mby7t2vs7hb6k9_gckdywy_80000gn/T/tycho1520086295680766878secure_storage
+
+!ENTRY org.eclipse.core.net 1 0 2018-05-30 13:52:48.696
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
