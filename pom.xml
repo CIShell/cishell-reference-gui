@@ -9,9 +9,9 @@
 	<modules>
 		<!-- <module>core</module> -->
 		<module>deployment</module>
-		<module>gui</module> 
+		<module>gui</module>
 		<!-- <module>libs</module> -->
-		<module>templates</module>
+		<!-- <module>templates</module> -->
 		<!-- <module>testing</module>
 		<module>examples</module> -->
 	</modules>
