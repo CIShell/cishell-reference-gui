@@ -10,5 +10,4 @@
   <groupId>org.cishell.deployment</groupId>
   <artifactId>org.cishell.reference.gui.brand.feature</artifactId>
   <version>1.0.0</version>
-  <packaging>eclipse-feature</packaging>
 </project>

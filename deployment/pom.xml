@@ -9,7 +9,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<modules>
-		<!-- <module>org.cishell.algorithm.examples.feature</module> -->
+		<module>org.cishell.algorithm.examples.feature</module>
 		<module>org.cishell.development.feature</module>
 		<module>org.cishell.environment.equinox.feature</module>
 		<module>org.cishell.feature</module>

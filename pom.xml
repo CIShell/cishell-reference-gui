@@ -7,7 +7,6 @@
 	<version>0.0.1</version>
 	<!-- GitHub trigger check -->
 	<modules>
-		<!-- <module>core</module> -->
 		<module>deployment</module>
 		<module>gui</module>
 
