@@ -29,10 +29,10 @@ Chin Hua Kong (kongch@indiana.edu)
 Dr. Katy Borner (katy@indiana.edu)
    </license>
 
-   <url>
+  <!--  <url>
       <update label="CIShell Update Site" url="http://cishell.org/update"/>
       <discovery label="CIShell Update Site" url="http://cishell.org/update"/>
-   </url>
+   </url> -->
 
    <plugin
          id="org.cishell.reference.gui.datamanager"

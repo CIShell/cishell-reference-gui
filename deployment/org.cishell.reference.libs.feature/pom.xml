@@ -8,4 +8,5 @@
   <packaging>eclipse-feature</packaging>
   <artifactId>org.cishell.reference.libs.feature</artifactId>
   <version>1.0.0</version>
+  <!-- Not in master -->
 </project>

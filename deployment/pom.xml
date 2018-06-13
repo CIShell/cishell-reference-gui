@@ -9,18 +9,24 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<modules>
-		<module>org.cishell.algorithm.examples.feature</module>
-		<module>org.cishell.development.feature</module>
-		<module>org.cishell.environment.equinox.feature</module>
-		<module>org.cishell.feature</module>
-		<module>org.cishell.reference.database.feature</module>
 		<module>org.cishell.reference.feature</module>
+		<module>org.cishell.reference.database.feature</module>
+		<!-- Below module commented in master -->
+		<!-- <module>org.cishell.algorithm.examples.feature</module> -->
+		<module>org.cishell.development.feature</module>
+		
+		
 		<module>org.cishell.reference.gui.brand.feature</module>
-		<module>org.cishell.reference.gui.feature</module>
-		<module>org.cishell.reference.releng</module>
+		<module>org.cishell.p2</module> 
+
+		
+		 <module>org.cishell.environment.equinox.feature</module>
+		<module>org.cishell.feature</module>
+		<module>org.cishell.reference.gui.feature</module> 
 		<module>org.cishell.reference.libs.feature</module>
+		<module>org.cishell.reference.releng</module>
 		<module>org.cishell.source.feature</module>
-		<module>org.cishell.p2</module>
+		
 	</modules>
 	<parent>
 		<groupId>org.cishell</groupId>

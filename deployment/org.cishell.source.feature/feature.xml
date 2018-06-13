@@ -74,112 +74,113 @@
          unpack="false"/>
          
          
-   <plugin
+ <!--   <plugin
          id="org.cishell.reference.source"
          download-size="0"
          install-size="0"
          version="0.0.0"
-         unpack="false"/>
+         unpack="false"/> -->
 
    <plugin
-         id="org.cishell.reference.services.source"
+        
+         id="org.cishell.reference.services"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
 
    <plugin
-         id="org.cishell.service.autostart.source"
+         id="org.cishell.service.autostart"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
 
    <plugin
-         id="org.cishell.templates.source"
+         id="org.cishell.templates"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
 
    <plugin
-         id="org.cishell.templates.jythonrunner.source"
+         id="org.cishell.templates.jythonrunner"
          download-size="0"
          install-size="0"
          version="0.0.0"/>
 
    <plugin
-         id="org.cishell.reference.prefs.admin.source"
+         id="org.cishell.reference.prefs.admin"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
 
    <plugin
-         id="org.cishell.utilities.source"
+         id="org.cishell.utilities"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
 
    <plugin
-         id="org.cishell.utility.swt.source"
+         id="org.cishell.utility.swt"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
 
    <plugin
-         id="org.cishell.utility.datastructure.source"
+         id="org.cishell.utility.datastructure"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
 
    <plugin
-         id="org.cishell.algorithm.convertergraph.source"
+         id="org.cishell.algorithm.convertergraph"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
 
    <plugin
-         id="org.cishell.service.database.source"
+         id="org.cishell.service.database"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
 
    <plugin
-         id="org.cishell.utility.dict.source"
+         id="org.cishell.utility.dict"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
          
    <plugin
-         id="org.cishell.framework.source"
+         id="org.cishell.framework"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
          
    <plugin
-         id="org.cishell.reference.service.database.source"
+         id="org.cishell.reference.service.database"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
 
    <plugin
-         id="org.cishell.service.database.source"
+         id="org.cishell.service.database"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
 
    <plugin
-         id="org.cishell.templates.database.source"
+         id="org.cishell.templates.database"
          download-size="0"
          install-size="0"
          version="0.0.0"

@@ -8,5 +8,5 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>org.cishell.p2</artifactId>
-  <!-- <packaging>eclipse-repository</packaging> -->
+  <packaging>eclipse-repository</packaging>
 </project>

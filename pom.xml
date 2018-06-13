@@ -7,11 +7,12 @@
 	<version>0.0.1</version>
 	<!-- GitHub trigger check -->
 	<modules>
+	<module>update-site</module>
+		 <module>gui</module>
 		<module>deployment</module>
-		<module>gui</module>
-
-	</modules>
-	<packaging>pom</packaging>
+	
+</modules>
+<packaging>pom</packaging>
 	<!-- <dependencies>
 		<dependency>
 			<groupId>org.cishell.clients.gui</groupId>
@@ -22,16 +23,27 @@
 		</dependency>
 	</dependencies> -->
 	<properties>
-		<tychoVersion>0.18.1</tychoVersion>
+		<tychoVersion>0.21.0</tychoVersion>
 		<memoryOptions1>-Xms512m -Xmx1024m -XX:PermSize=256m</memoryOptions1>
 		<memoryOptions2>-XX:MaxPermSize=256m</memoryOptions2>
 	</properties>
 
 	<repositories>
+<!-- 
+		<repository>
+			<id>Indigo1</id>
+			<layout>p2</layout>
+			<url>http://download.eclipse.org/eclipse/updates/4.1</url>
+			<releases>
+				<enabled>false</enabled>
+				<updatePolicy>never</updatePolicy>
+				<checksumPolicy>warn</checksumPolicy>
+			</releases>
+		</repository> -->
 		<repository>
 			<id>Indigo</id>
 			<layout>p2</layout>
-			<url>http://download.eclipse.org/releases/indigo/201106220900/</url>
+			<url>http://download.eclipse.org/eclipse/updates/3.7</url>
 			<releases>
 				<enabled>false</enabled>
 				<updatePolicy>never</updatePolicy>
@@ -41,12 +53,18 @@
 		<repository>
 			<id>eclipse-orbit</id>
 			<layout>p2</layout>
-			<url>http://download.eclipse.org/tools/orbit/downloads/drops/R20110523182458/repository</url>
+			<url>http://download.eclipse.org/tools/orbit/R-builds/R20170516192513/repository</url>
 			<releases>
 				<enabled>false</enabled>
 				<updatePolicy>never</updatePolicy>
 				<checksumPolicy>warn</checksumPolicy>
 			</releases>
+		</repository>
+
+		<repository>
+			<id>generate-p2-site</id>
+			<url>file:///${basedir}\..\..\update-site\target\repository</url>
+			<layout>p2</layout>
 		</repository>
 	</repositories>
 
@@ -127,7 +145,6 @@
 
 						<!-- Linux -->
 
-
 						<environment>
 							<os>linux</os>
 							<ws>gtk</ws>
@@ -143,7 +160,17 @@
 					</environments>
 				</configuration>
 			</plugin>
+
+			
 		</plugins>
 	</build>
 
-</project>
+       <!-- <pluginRepositories>
+        	<pluginRepository>
+            	<id>reficio</id>
+            	<url>http://repo.reficio.org/maven/</url>
+        	</pluginRepository>
+        </pluginRepositories> -->
+
+
+    </project>

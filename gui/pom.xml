@@ -7,7 +7,8 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <modules>
-    <module>org.cishell.reference.gui.brand.cishell</module>
+    
+    <!-- Below does not work -->
     <module>org.cishell.reference.gui.datamanager</module>
     <module>org.cishell.reference.gui.workflow</module>
     <module>org.cishell.reference.gui.guibuilder.swt</module>
@@ -17,6 +18,7 @@
     <module>org.cishell.reference.gui.prefs.swt</module>
     <module>org.cishell.reference.gui.scheduler</module>
     <module>org.cishell.reference.gui.workspace</module>
+    <module>org.cishell.reference.gui.brand.cishell</module>
   </modules>
   <parent>
   	<groupId>org.cishell</groupId>
