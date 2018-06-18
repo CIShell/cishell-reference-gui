@@ -61,7 +61,7 @@
               <id>org.cishell.core:org.cishell.utility.datastructure:1.0.0</id>
             </artifact>
             <artifact>
-              <id>org.cishell.core:org.cishell.utility.dict:0.0.1-SNAPSHOT</id>
+              <id>org.cishell.core:org.cishell.utility.dict:1.0.0</id>
             </artifact>
             <artifact>
               <id>org.cishell.core:org.cishell.utility.swt:1.0.0</id>
