@@ -1,0 +1,10 @@
+workspace/
+target
+bin
+build
+*.class
+.svn
+.project
+*.pref
+.classpath
+.settings
