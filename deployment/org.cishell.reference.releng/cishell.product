@@ -4,7 +4,7 @@
 <product name="Cyberinfrastructure Shell" uid="cishell" id="org.cishell.reference.gui.brand.cishell.cishell" application="org.cishell.reference.gui.workspace.CIShellApplication" version="2.0" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
-      <image path="../../../../../clients/gui/org.cishell.reference.gui.brand.cishell/icons/about.gif"/>
+      <image path="../../../../../gui/org.cishell.reference.gui.brand.cishell/icons/about.gif"/>
       <text>
          %blurb
       </text>
@@ -23,11 +23,11 @@
       location="org.cishell.reference.gui.brand.cishell"
       startupProgressRect="0,163,500,10" />
    <launcher name="cishell">
-      <linux icon="../../../../../clients/gui/org.cishell.reference.gui.brand.cishell/icons/cishell.xpm"/>
-      <macosx icon="../../../../../clients/gui/org.cishell.reference.gui.brand.cishell/icons/cishell.icns"/>
+      <linux icon="../../../../../gui/org.cishell.reference.gui.brand.cishell/icons/cishell.xpm"/>
+      <macosx icon="../../../../../gui/org.cishell.reference.gui.brand.cishell/icons/cishell.icns"/>
       <solaris/>
       <win useIco="true">
-         <ico path="../../../../../clients/gui/org.cishell.reference.gui.brand.cishell/icons/cishell.ico"/>
+         <ico path="../../../../../gui/org.cishell.reference.gui.brand.cishell/icons/cishell.ico"/>
          <bmp
             winSmallHigh="icons/ivc_sm_32.bmp"
             winSmallLow="icons/ivc_sm_16.bmp"
