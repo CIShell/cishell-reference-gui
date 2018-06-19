@@ -4,7 +4,7 @@
 <product name="Cyberinfrastructure Shell" uid="cishell" id="org.cishell.reference.gui.brand.cishell.cishell" application="org.cishell.reference.gui.workspace.CIShellApplication" version="2.0" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
-      <image path="../../../../../gui/org.cishell.reference.gui.brand.cishell/icons/about.gif"/>
+      <image path="../../../../../clients/gui/org.cishell.reference.gui.brand.cishell/icons/about.gif"/>
       <text>
          %blurb
       </text>
@@ -23,11 +23,11 @@
       location="org.cishell.reference.gui.brand.cishell"
       startupProgressRect="0,163,500,10" />
    <launcher name="cishell">
-      <linux icon="../../../../../gui/org.cishell.reference.gui.brand.cishell/icons/cishell.xpm"/>
-      <macosx icon="../../../../../gui/org.cishell.reference.gui.brand.cishell/icons/cishell.icns"/>
+      <linux icon="../../../../../clients/gui/org.cishell.reference.gui.brand.cishell/icons/cishell.xpm"/>
+      <macosx icon="../../../../../clients/gui/org.cishell.reference.gui.brand.cishell/icons/cishell.icns"/>
       <solaris/>
       <win useIco="true">
-         <ico path="../../../../../gui/org.cishell.reference.gui.brand.cishell/icons/cishell.ico"/>
+         <ico path="../../../../../clients/gui/org.cishell.reference.gui.brand.cishell/icons/cishell.ico"/>
          <bmp
             winSmallHigh="icons/ivc_sm_32.bmp"
             winSmallLow="icons/ivc_sm_16.bmp"
@@ -53,9 +53,9 @@ Licensed under the Apache License, Version 2.0 (the &amp;quot;License&amp;quot;)
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at:
 http://www.apache.org/licenses/LICENSE-2.0
-Unless required by applicable law or agreed to in writing,
-software distributed under the License is distributed on an
-&amp;quot;AS IS&amp;quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+Unless required by applicable law or agreed to in writing, 
+software distributed under the License is distributed on an 
+&amp;quot;AS IS&amp;quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY 
 KIND, either express or implied. See the License for the specific
 language governing permissions and limitations under the License.
 Project Contacts:

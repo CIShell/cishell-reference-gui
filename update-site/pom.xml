@@ -88,7 +88,19 @@
               <id>org.cishell.libs:Apache_Derby:1.0.0</id>
             </artifact>      
 
+            <artifact><id>org.cishell.clients.gui:org.cishell.reference.gui.datamanager:1.0.0</id></artifact> 
+            <artifact><id>org.cishell.clients.gui:org.cishell.reference.gui.brand.cishell:0.4.0</id></artifact> 
 
+            <artifact><id>org.cishell.clients.gui:org.cishell.reference.gui.guibuilder.swt:1.0.0</id></artifact> 
+            <artifact><id>org.cishell.clients.gui:org.cishell.reference.gui.log:1.0.1</id></artifact> 
+            
+            <artifact><id>org.cishell.clients.gui:org.cishell.reference.gui.persistence:1.0.0</id></artifact> 
+            <artifact><id>org.cishell.clients.gui:org.cishell.reference.gui.prefs.swt:0.0.1</id></artifact> 
+            <artifact><id>org.cishell.clients.gui:org.cishell.reference.gui.scheduler:1.0.0</id></artifact> 
+            <!-- <artifact><id>org.cishell.clients.gui:org.cishell.reference.gui.workflow:1.0.0</id></artifact>  -->
+            <artifact><id>org.cishell.clients.gui:org.cishell.reference.gui.workspace:1.0.0</id></artifact> 
+            <!-- <artifact><id>org.cishell.clients.gui:org.org.cishell.reference.gui.menumanager:1.0.0</id></artifact>  -->
+          
           </artifacts>
         </configuration>
 

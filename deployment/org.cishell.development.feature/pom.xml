@@ -9,5 +9,4 @@
   <groupId>org.cishell.deployment</groupId>
   <artifactId>org.cishell.development.feature</artifactId>
   <version>1.0.1</version>
-  <packaging>eclipse-feature</packaging>
 </project>

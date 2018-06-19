@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <artifactId>gui</artifactId>
@@ -9,50 +10,5 @@
   <groupId>org.cishell.clients.gui</groupId>
   <artifactId>org.cishell.reference.gui.log</artifactId>
   <version>1.0.1</version>
-  <!-- <packaging>eclipse-plugin</packaging> -->
-  <dependencies>
-    <dependency>
-      <groupId>org.eclipse</groupId>
-      <artifactId>ui</artifactId>
-      <version>3.3.0-I20070614-0800</version>
-    </dependency>
-    <dependency>
-      <groupId>org.eclipse.core</groupId>
-      <artifactId>org.eclipse.core.runtime</artifactId>
-      <version>3.6.0.v20100505</version>
-    </dependency>
-    <!-- <dependency> <groupId>com.google.common</groupId> <artifactId>google-collect</artifactId> <version>0.5</version> </dependency> -->
-    <!-- <dependency> <groupId>com.google.collections</groupId> <artifactId>google-collections</artifactId> <version>0.9</version> </dependency> -->
-    <!-- <dependency>
-      <groupId>com.google.code.google-collections</groupId>
-      <artifactId>google-collect</artifactId>
-      <version>snapshot-20080530</version>
-    </dependency>
-    <dependency>
-        <groupId>com.google.code.google-collections</groupId>
-        <artifactId>google-collect</artifactId>
-        <version>snapshot-20071022</version>
-    </dependency> -->
-
-    <dependency>
-      <groupId>org.cishell.core</groupId>
-      <artifactId>org.cishell.utility.swt</artifactId>
-      <version>1.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.cishell.clients.gui</groupId>
-      <artifactId>org.cishell.reference.gui.datamanager</artifactId>
-      <version>1.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.cishell.core</groupId>
-      <artifactId>org.cishell.framework</artifactId>
-      <version>1.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.osgi</groupId>
-      <artifactId>org.osgi.service.log</artifactId>
-      <version>1.4.0</version>
-    </dependency>
-  </dependencies>
+  <packaging>eclipse-plugin</packaging>
 </project>

@@ -1,6 +1,0 @@
-Export-Package: org.cishell.reference.gui.workflow.views
-Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Bundle-ActivationPolicy: lazy
-Eclipse-LazyStart: true
-Bundle-ClassPath: .,\
-lib/xstream-1.4.3.jar

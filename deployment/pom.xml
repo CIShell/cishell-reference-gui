@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.cishell.deployment</groupId>
 	<artifactId>deployment</artifactId>
@@ -11,162 +14,24 @@
 		<!-- Below module commented in master -->
 		<!-- <module>org.cishell.algorithm.examples.feature</module> -->
 		<module>org.cishell.development.feature</module>
-
+		
+		
 		<module>org.cishell.reference.gui.brand.feature</module>
-		<module>org.cishell.p2</module>
+		<module>org.cishell.p2</module> 
 
-		<module>org.cishell.environment.equinox.feature</module>
+		
+		 <module>org.cishell.environment.equinox.feature</module>
 		<module>org.cishell.feature</module>
-		<module>org.cishell.reference.gui.feature</module>
+		<module>org.cishell.reference.gui.feature</module> 
 		<module>org.cishell.reference.libs.feature</module>
 		<module>org.cishell.reference.releng</module>
 		<module>org.cishell.source.feature</module>
-
+		
 	</modules>
 	<parent>
 		<groupId>org.cishell</groupId>
 		<artifactId>parent</artifactId>
 		<version>0.0.1</version>
-		<relativePath>../pom.xml</relativePath>
+		<!-- <relativePath>../pom.xml</relativePath> -->
 	</parent>
-	<!-- <dependencies>
-		<dependency>
-			<groupId>org.cishell.clients.gui</groupId>
-			<artifactId>gui</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-			<type>pom</type>
-			<optional>true</optional>
-		</dependency>
-	</dependencies> -->
-	<properties>
-		<tychoVersion>0.21.0</tychoVersion>
-		<memoryOptions1>-Xms512m -Xmx1024m -XX:PermSize=256m</memoryOptions1>
-		<memoryOptions2>-XX:MaxPermSize=256m</memoryOptions2>
-	</properties>
-
-	<repositories>
-		<!-- <repository> <id>Indigo1</id> <layout>p2</layout> <url>http://download.eclipse.org/eclipse/updates/4.1</url> <releases> <enabled>false</enabled> <updatePolicy>never</updatePolicy> <checksumPolicy>warn</checksumPolicy> </releases> </repository>
-		-->
-		<repository>
-			<id>Indigo</id>
-			<layout>p2</layout>
-			<url>http://download.eclipse.org/eclipse/updates/3.7</url>
-			<releases>
-				<enabled>false</enabled>
-				<updatePolicy>never</updatePolicy>
-				<checksumPolicy>warn</checksumPolicy>
-			</releases>
-		</repository>
-		<repository>
-			<id>eclipse-orbit</id>
-			<layout>p2</layout>
-			<url>http://download.eclipse.org/tools/orbit/R-builds/R20170516192513/repository</url>
-			<releases>
-				<enabled>false</enabled>
-				<updatePolicy>never</updatePolicy>
-				<checksumPolicy>warn</checksumPolicy>
-			</releases>
-		</repository>
-
-		<repository>
-			<id>generate-p2-site</id>
-			<url>file:///${basedir}/../../update-site/target/repository</url>
-			<layout>p2</layout>
-		</repository>
-	</repositories>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.eclipse.tycho</groupId>
-				<artifactId>tycho-source-plugin</artifactId>
-				<version>${tychoVersion}</version>
-				<executions>
-					<execution>
-						<id>plugin-source</id>
-						<goals>
-							<goal>plugin-source</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
-				<groupId>org.eclipse.tycho</groupId>
-				<artifactId>tycho-maven-plugin</artifactId>
-				<version>${tychoVersion}</version>
-				<extensions>true</extensions>
-			</plugin>
-			<plugin>
-				<groupId>org.eclipse.tycho</groupId>
-				<artifactId>tycho-compiler-plugin</artifactId>
-				<version>${tychoVersion}</version>
-				<configuration>
-					<source>1.6</source>
-					<target>1.6</target>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.eclipse.tycho</groupId>
-				<artifactId>target-platform-configuration</artifactId>
-				<version>${tychoVersion}</version>
-				<configuration>
-					<environments>
-
-						<!-- Win 32 -->
-
-						<environment>
-							<os>win32</os>
-							<ws>win32</ws>
-							<arch>x86</arch>
-						</environment>
-
-						<environment>
-							<os>win32</os>
-							<ws>win32</ws>
-							<arch>x86_64</arch>
-						</environment>
-
-						<!-- Mac -->
-
-						<environment>
-							<os>macosx</os>
-							<ws>carbon</ws>
-							<arch>x86</arch>
-						</environment>
-
-						<environment>
-							<os>macosx</os>
-							<ws>cocoa</ws>
-							<arch>x86_64</arch>
-						</environment>
-
-						<environment>
-							<os>macosx</os>
-							<ws>cocoa</ws>
-							<arch>x86</arch>
-						</environment>
-
-						<!-- Linux -->
-
-						<environment>
-							<os>linux</os>
-							<ws>gtk</ws>
-							<arch>x86</arch>
-						</environment>
-
-						<environment>
-							<os>linux</os>
-							<ws>gtk</ws>
-							<arch>x86_64</arch>
-						</environment>
-
-					</environments>
-				</configuration>
-			</plugin>
-
-		</plugins>
-	</build>
-
-	<!-- <pluginRepositories> <pluginRepository> <id>reficio</id> <url>http://repo.reficio.org/maven/</url> </pluginRepository> </pluginRepositories> -->
-
 </project>

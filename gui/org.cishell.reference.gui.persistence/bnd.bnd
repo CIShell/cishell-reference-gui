@@ -1,3 +1,0 @@
-X-AutoStart: true
-Service-Component: OSGI-INF/load.xml, OSGI-INF/save.xml, OSGI-INF/view.xml, OSGI-INF/viewwith.xml
-Bundle-RequiredExecutionEnvironment: J2SE-1.5

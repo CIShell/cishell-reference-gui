@@ -3,14 +3,14 @@
       id="org.cishell.source.feature"
       label="org.cishell.source.feature"
       version="1.0.0">
-
-  <!-- <plugin
+      
+  <plugin
          id="org.cishell.reference.gui.datamanager.source"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
-
+         
    <plugin
          id="org.cishell.reference.gui.workflow.source"
          download-size="0"
@@ -72,17 +72,17 @@
          install-size="0"
          version="0.4.0"
          unpack="false"/>
-
-
-   <plugin
+         
+         
+ <!--   <plugin
          id="org.cishell.reference.source"
          download-size="0"
          install-size="0"
          version="0.0.0"
-         unpack="false"/>
+         unpack="false"/> -->
 
    <plugin
-
+        
          id="org.cishell.reference.services"
          download-size="0"
          install-size="0"
@@ -157,14 +157,14 @@
          install-size="0"
          version="1.0.0"
          unpack="false"/>
-
+         
    <plugin
          id="org.cishell.framework"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
-
+         
    <plugin
          id="org.cishell.reference.service.database"
          download-size="0"
@@ -184,6 +184,6 @@
          download-size="0"
          install-size="0"
          version="0.0.0"
-         unpack="false"/> -->
+         unpack="false"/>
 
 </feature>
