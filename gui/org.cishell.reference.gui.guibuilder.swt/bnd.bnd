@@ -1,0 +1,3 @@
+Export-Package: org.cishell.reference.gui.guibuilder.swt,\
+ org.cishell.reference.gui.guibuilder.swt.builder,\
+ org.cishell.reference.gui.guibuilder.swt.builder.components
