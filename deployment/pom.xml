@@ -4,34 +4,31 @@
 	xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.cishell.deployment</groupId>
-	<artifactId>deployment</artifactId>
+
+	<groupId>org.cishell.reference.gui</groupId>
+	<artifactId>cishell-product</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
+
 	<modules>
 		<module>org.cishell.reference.feature</module>
 		<module>org.cishell.reference.database.feature</module>
 		<!-- Below module commented in master -->
 		<!-- <module>org.cishell.algorithm.examples.feature</module> -->
 		<module>org.cishell.development.feature</module>
-		
-		
 		<module>org.cishell.reference.gui.brand.feature</module>
-		<module>org.cishell.p2</module> 
-
-		
-		 <module>org.cishell.environment.equinox.feature</module>
+		<module>org.cishell.p2</module>
+		<module>org.cishell.environment.equinox.feature</module>
 		<module>org.cishell.feature</module>
-		<module>org.cishell.reference.gui.feature</module> 
+		<module>org.cishell.reference.gui.feature</module>
 		<module>org.cishell.reference.libs.feature</module>
 		<module>org.cishell.reference.releng</module>
 		<module>org.cishell.source.feature</module>
-		
 	</modules>
+
 	<parent>
-		<groupId>org.cishell</groupId>
-		<artifactId>parent</artifactId>
-		<version>0.0.1</version>
-		<!-- <relativePath>../pom.xml</relativePath> -->
+		<groupId>org.cishell.reference.gui</groupId>
+		<artifactId>root-module</artifactId>
+		<version>1.0.0</version>
 	</parent>
 </project>

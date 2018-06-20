@@ -1,9 +1,15 @@
-# CIShell
+# CIShell Reference GUI
 
-This is the **reference-gui** of the CIShell framework, see http://cishell.org/
+This is the **Reference GUI** for the CIShell framework, see <http://cishell.org/>
 
-A warning: this framework is surprisingly big, mainly because of the
-release engineering components in deployment/.  You can expect about
-1.5 GB of disk usage from the git repository and the working tree.
+## Prerequesites
 
-For build instructions, see [the instructions for building Sci2](https://github.com/cns-iu/cishell-applications/blob/master/README.md).
+This repsitory assumes the CIShell core has been built using maven according to the instructions on the [CIShell GitHub Repository](https://github.com/CIShell/CIShell).
+
+## Build Instructions
+
+This repository is built using maven. You will need to run two commands:
+```
+mvn clean install
+mvn clean install -P build-product
+```

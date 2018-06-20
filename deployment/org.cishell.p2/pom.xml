@@ -3,8 +3,8 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <artifactId>deployment</artifactId>
-    <groupId>org.cishell.deployment</groupId>
+    <groupId>org.cishell.reference.gui</groupId>
+  	<artifactId>cishell-product</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>org.cishell.p2</artifactId>

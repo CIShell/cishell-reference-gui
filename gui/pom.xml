@@ -6,7 +6,8 @@
   <artifactId>gui</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
-   <modules>
+
+  <modules>
     <module>org.cishell.reference.gui.brand.cishell</module>
     <module>org.cishell.reference.gui.datamanager</module>
     <module>org.cishell.reference.gui.workflow</module>
@@ -18,10 +19,10 @@
     <module>org.cishell.reference.gui.scheduler</module>
     <module>org.cishell.reference.gui.workspace</module>
   </modules>
+
   <parent>
-  	<groupId>org.cishell</groupId>
-  	<artifactId>parent</artifactId>
-  	<version>0.0.1</version>
-  	<relativePath>../pom.xml</relativePath>
-  </parent>
+		<groupId>org.cishell.reference.gui</groupId>
+		<artifactId>root-module</artifactId>
+		<version>1.0.0</version>
+	</parent>
 </project>

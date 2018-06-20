@@ -2,26 +2,44 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.cishell</groupId>
-	<artifactId>parent</artifactId>
-	<version>0.0.1</version>
-	<!-- GitHub trigger check -->
-	<modules>
-	<module>update-site</module>
-		 <module>gui</module>
-		<module>deployment</module>
-	
-</modules>
-<packaging>pom</packaging>
-	<!-- <dependencies>
-		<dependency>
-			<groupId>org.cishell.clients.gui</groupId>
-			<artifactId>gui</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-			<type>pom</type>
-			<optional>true</optional>
-		</dependency>
-	</dependencies> -->
+
+	<groupId>org.cishell.reference.gui</groupId>
+	<artifactId>root-module</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
+
+	<parent>
+		<groupId>org.cishell</groupId>
+		<artifactId>parent</artifactId>
+		<version>0.0.1</version>
+	</parent>
+
+	<profiles>
+		<profile>
+			<id>default</id>
+			<activation>
+          <activeByDefault>true</activeByDefault>
+      </activation>
+			<modules>
+				<module>update-site</module>
+				<module>gui</module>
+			</modules>
+		</profile>
+		<profile>
+			<id>build-product</id>
+			<modules>
+				<module>deployment</module>
+			</modules>
+			<repositories>
+				<repository>
+					<id>generate-p2-site</id>
+					<url>file:///${basedir}/../../update-site/target/repository</url>
+					<layout>p2</layout>
+				</repository>
+			</repositories>
+		</profile>
+	</profiles>
+
 	<properties>
 		<tychoVersion>0.21.0</tychoVersion>
 		<memoryOptions1>-Xms512m -Xmx1024m -XX:PermSize=256m</memoryOptions1>
@@ -29,17 +47,6 @@
 	</properties>
 
 	<repositories>
-<!-- 
-		<repository>
-			<id>Indigo1</id>
-			<layout>p2</layout>
-			<url>http://download.eclipse.org/eclipse/updates/4.1</url>
-			<releases>
-				<enabled>false</enabled>
-				<updatePolicy>never</updatePolicy>
-				<checksumPolicy>warn</checksumPolicy>
-			</releases>
-		</repository> -->
 		<repository>
 			<id>Indigo</id>
 			<layout>p2</layout>
@@ -60,14 +67,7 @@
 				<checksumPolicy>warn</checksumPolicy>
 			</releases>
 		</repository>
-
-		<repository>
-			<id>generate-p2-site</id>
-			<url>file:///${basedir}/../../update-site/target/repository</url>
-			<layout>p2</layout>
-		</repository>
 	</repositories>
-
 
 	<build>
 		<plugins>
@@ -107,8 +107,6 @@
 					<environments>
 
 						<!-- Win 32 -->
-
-
 						<environment>
 							<os>win32</os>
 							<ws>win32</ws>
@@ -123,7 +121,6 @@
 
 
 						<!-- Mac -->
-
 						<environment>
 							<os>macosx</os>
 							<ws>carbon</ws>
@@ -144,7 +141,6 @@
 
 
 						<!-- Linux -->
-
 						<environment>
 							<os>linux</os>
 							<ws>gtk</ws>
@@ -156,21 +152,9 @@
 							<ws>gtk</ws>
 							<arch>x86_64</arch>
 						</environment>
-
 					</environments>
 				</configuration>
 			</plugin>
-
-			
 		</plugins>
 	</build>
-
-       <!-- <pluginRepositories>
-        	<pluginRepository>
-            	<id>reficio</id>
-            	<url>http://repo.reficio.org/maven/</url>
-        	</pluginRepository>
-        </pluginRepositories> -->
-
-
-    </project>
+</project>
