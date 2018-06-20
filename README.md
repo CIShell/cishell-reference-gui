@@ -4,7 +4,7 @@ This is the **Reference GUI** for the CIShell framework, see <http://cishell.org
 
 ## Prerequesites
 
-This repsitory assumes the CIShell core has been built using maven according to the instructions on the [CIShell GitHub Repository](https://github.com/CIShell/CIShell).
+This repository assumes the CIShell core has been built using maven according to the instructions on the [CIShell GitHub Repository](https://github.com/CIShell/CIShell).
 
 ## Build Instructions
 
