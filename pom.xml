@@ -10,18 +10,18 @@
 
 	<profiles>
 		<profile>
+			<id>build-nonpde</id>
+			<modules>
+				<module>nonpde-dependencies</module>
+			</modules>
+		</profile>
+		<profile>
 			<id>default</id>
 			<activation>
           <activeByDefault>true</activeByDefault>
       </activation>
 			<modules>
-				<module>nonpde-dependencies</module>
 				<module>gui</module>
-			</modules>
-		</profile>
-		<profile>
-			<id>build-product</id>
-			<modules>
 				<module>deployment</module>
 			</modules>
 		</profile>
