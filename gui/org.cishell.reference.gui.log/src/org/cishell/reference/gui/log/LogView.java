@@ -1,16 +1,16 @@
-/* **************************************************************************** 
+/* ****************************************************************************
  * CIShell: Cyberinfrastructure Shell, An Algorithm Integration Framework.
- * 
+ *
  * All rights reserved. This program and the accompanying materials are made
  * available under the terms of the Apache License v2.0 which accompanies
  * this distribution, and is available at:
  * http://www.apache.org/licenses/LICENSE-2.0.html
- * 
+ *
  * Created on Aug 21, 2006 at Indiana University.
- * 
+ *
  * Contributors:
  * 	   Weixia(Bonnie) Huang, Bruce Herr
- *     School of Library and Information Science, Indiana University 
+ *     School of Library and Information Science, Indiana University
  * ***************************************************************************/
 package org.cishell.reference.gui.log;
 
@@ -89,7 +89,7 @@ public class LogView extends ViewPart implements DataManagerListener, LogListene
 
 	public void dataSelected(final Data[] data) {
 		if (HIGHLIGHT_TEXT) {
-			PlatformUI.getWorkbench().getDisplay().syncExec(new Runnable() {
+			syncExec(new Runnable() {
 				public void run() {
 					LogView.this.textField.replaceStyleRanges(
 						0, LogView.this.textField.getText().length(), new StyleRange[0]);
@@ -138,7 +138,7 @@ public class LogView extends ViewPart implements DataManagerListener, LogListene
 				nonHighlightStyles.add(newStyle);
 			}
 
-			PlatformUI.getWorkbench().getDisplay().syncExec(new Runnable() {
+			syncExec(new Runnable() {
 				public void run() {
 					try {
 						for (StyleRange style : highlights) {
@@ -167,7 +167,7 @@ public class LogView extends ViewPart implements DataManagerListener, LogListene
 
 		return color[0];
 	}
-	
+
 	public static final Map<String, Color> COLOR_MAPPING = getColorMapping();
 
 	private static Map<String, Color> getColorMapping() {
@@ -180,11 +180,11 @@ public class LogView extends ViewPart implements DataManagerListener, LogListene
         return Collections.unmodifiableMap(colorMapping);
 	}
 
-	private Composite parent;	
+	private Composite parent;
 	private StyledText textField;
 	private URLClickedListener urlListener;
     private URLMouseCursorListener urlCursorListener;
-    
+
     public LogView() {
         //TODO: Need to set the log level based on preferences service
  /*       Configuration cfg = IVC.getInstance().getConfiguration();
@@ -214,13 +214,13 @@ public class LogView extends ViewPart implements DataManagerListener, LogListene
         this.textField.setEditable(false);
         this.textField.setBackground(parent.getDisplay().getSystemColor(SWT.COLOR_WHITE));
         this.textField.getCaret().setVisible(false);
-        
+
         // Handle URL.
         this.urlListener = new URLClickedListener(textField);
         this.textField.addMouseListener(this.urlListener);
         this.urlCursorListener = new URLMouseCursorListener(this.parent, this.textField);
         this.textField.addMouseMoveListener(this.urlCursorListener);
-        
+
         // Add copy context menu when hover a block of textField and right click the mouse.
         Display display = Display.getDefault();
         final Clipboard clipboard = new Clipboard(display);
@@ -248,7 +248,7 @@ public class LogView extends ViewPart implements DataManagerListener, LogListene
                  }
         	 }
           });
- 
+
          // Get LogReaderService through BundleContext.
          // Add itself to the LogReaderService as a LogListener.
          BundleContext context = Activator.getContext();
@@ -256,12 +256,12 @@ public class LogView extends ViewPart implements DataManagerListener, LogListene
          	context.getServiceReference(LogReaderService.class.getName());
          LogReaderService logReaderService =
          	(LogReaderService) context.getService(logReaderServiceReference);
-         
+
          if (logReaderService != null) {
-        	 logReaderService.addLogListener(this);   
-        	 
+        	 logReaderService.addLogListener(this);
+
         	 Enumeration backLogEntries = logReaderService.getLog();
-        	 
+
         	 while (backLogEntries.hasMoreElements()) {
         	 	LogEntry logEntry = (LogEntry) backLogEntries.nextElement();
         	 	this.logged(logEntry);
@@ -269,11 +269,11 @@ public class LogView extends ViewPart implements DataManagerListener, LogListene
          } else {
         	 System.out.println("reader is null");
          }
-         
+
          ServiceReference logServiceReference =
          	context.getServiceReference(LogService.class.getName());
          LogService logService = (LogService) context.getService(logServiceReference);
-         
+
          if (logService != null) {
          	try {
          		URL welcomeTextFileURL = new URL(new URL(
@@ -303,64 +303,64 @@ public class LogView extends ViewPart implements DataManagerListener, LogListene
     public void setFocus() {
     	textField.setFocus();
     }
-    
+
     public void logged(final LogEntry entry) {
-    	PlatformUI.getWorkbench().getDisplay().syncExec(new Runnable() {
-			public void run() {
-				try {
-					String message = entry.getMessage();
-					if (goodEntry(entry)) {
-                        /* Not all messages length w/ a new line,
-						 * but they need to to print properly.
-						 */
-						if (!message.endsWith("\n")) {
-							message += "\n";
-						}
+			syncExec(new Runnable() {
+				public void run() {
+					try {
+						String message = entry.getMessage();
+						if (goodEntry(entry)) {
+	                        /* Not all messages length w/ a new line,
+							 * but they need to to print properly.
+							 */
+							if (!message.endsWith("\n")) {
+								message += "\n";
+							}
 
-						if (HIGHLIGHT_TEXT) {
-							ServiceReference serviceReference = entry.getServiceReference();
+							if (HIGHLIGHT_TEXT) {
+								ServiceReference serviceReference = entry.getServiceReference();
 
-							if (serviceReference != null) {
-								int currentTextLength = LogView.this.textField.getText().length();
-								Bounds highlightBounds =
-									new Bounds(currentTextLength, message.length());
-								LogView.this.boundsByServiceReference.put(
-									serviceReference, highlightBounds);
+								if (serviceReference != null) {
+									int currentTextLength = LogView.this.textField.getText().length();
+									Bounds highlightBounds =
+										new Bounds(currentTextLength, message.length());
+									LogView.this.boundsByServiceReference.put(
+										serviceReference, highlightBounds);
+								}
+							}
+
+							Collection<StyleRange> styles = SWTUtilities.urlifyUrls(
+								LogView.this.textField,
+								LogView.this.urlListener,
+								LogView.this.urlCursorListener,
+								message,
+								COLOR_MAPPING.get("" + entry.getLevel()),
+								URL_COLOR);
+
+							if (HIGHLIGHT_TEXT) {
+								LogView.this.nonHighlightStyleRanges.addAll(styles);
 							}
 						}
-                        
-						Collection<StyleRange> styles = SWTUtilities.urlifyUrls(
-							LogView.this.textField,
-							LogView.this.urlListener,
-							LogView.this.urlCursorListener,
-							message,
-							COLOR_MAPPING.get("" + entry.getLevel()),
-							URL_COLOR);
-
-						if (HIGHLIGHT_TEXT) {
-							LogView.this.nonHighlightStyleRanges.addAll(styles);
-						}
+					} catch (Throwable e) {
+						e.printStackTrace();
 					}
-				} catch (Throwable e) {
-					e.printStackTrace();
 				}
-			}
     	});
     }
-    
+
     private boolean goodEntry(LogEntry entry) {
     	// TODO: developers would like to see validation warnings, but users should not.
     	Bundle sourceBundle = entry.getBundle();
-    	if (sourceBundle != null 
+    	if (sourceBundle != null
     			&& sourceBundle.getSymbolicName().startsWith("org.eclipse.equinox.metatype")) {
     		return false;
     	}
-    	
+
     	// TODO: Developers should see debug messages, but users should not.
     	if (entry.getLevel() >= LogService.LOG_DEBUG) {
     		return false;
     	}
-    	
+
     	String msg = entry.getMessage();
         if (msg == null
         		|| msg.startsWith("ServiceEvent ")
@@ -368,9 +368,17 @@ public class LogView extends ViewPart implements DataManagerListener, LogListene
         		|| msg.startsWith("FrameworkEvent ")) {
             return false;
         }
-        
-        return true;   
+
+        return true;
     }
+
+		private boolean syncExec(Runnable runnable) {
+			Display display = PlatformUI.getWorkbench().getDisplay();
+			if (!display.isDisposed()) {
+				display.syncExec(runnable);
+			}
+			return display.isDisposed();
+		}
 
     private static class Bounds {
     	public int start;
