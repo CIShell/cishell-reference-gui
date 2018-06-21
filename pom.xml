@@ -48,6 +48,7 @@
 			<id>Indigo</id>
 			<layout>p2</layout>
 			<url>http://download.eclipse.org/eclipse/updates/3.7</url>
+			<!-- <url>http://download.eclipse.org/eclipse/updates/4.2</url> -->
 			<releases>
 				<enabled>false</enabled>
 				<updatePolicy>never</updatePolicy>
@@ -58,7 +59,10 @@
 		<repository>
 			<id>eclipse-orbit</id>
 			<layout>p2</layout>
-			<url>http://download.eclipse.org/tools/orbit/downloads/drops/R20151118145958/repository</url>
+			<!-- <url>http://download.eclipse.org/tools/orbit/downloads/drops/R20151118145958/repository</url> -->
+			<!-- <url>http://download.eclipse.org/tools/orbit/downloads/drops/R20160221192158/repository</url> -->
+			<url>http://download.eclipse.org/tools/orbit/downloads/drops/R20160520211859/repository</url>
+			<!-- <url>http://download.eclipse.org/tools/orbit/downloads/drops/R20170307180635/repository</url>  -->
 			<releases>
 				<enabled>false</enabled>
 				<updatePolicy>never</updatePolicy>
