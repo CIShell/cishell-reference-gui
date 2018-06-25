@@ -17,13 +17,13 @@
    </license>
 
    <plugin
-         id="joda_time"
+         id="joda-time"
          download-size="0"
          install-size="0"
          version="0.0.0"/>
 
    <plugin
-         id="cern.colt"
+         id="colt"
          download-size="0"
          install-size="0"
          version="0.0.0"/>
@@ -59,7 +59,7 @@
          version="0.0.0"/> 
 
    <plugin
-         id="jythonlib"
+         id="jython"
          download-size="0"
          install-size="0"
          version="0.0.0"/>
@@ -84,7 +84,7 @@
          version="0.0.0"/>
 
    <plugin
-         id="org.prefuse.lib"
+         id="prefuse"
          download-size="0"
          install-size="0"
          version="0.0.0"/>
