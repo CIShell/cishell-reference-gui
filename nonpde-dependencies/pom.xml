@@ -87,6 +87,9 @@
               <artifact>
                 <id>org.cishell.core.libs:Apache_Derby:1.0.0</id>
               </artifact>
+              <artifact>
+                <id>org.cishell.core.libs:com.google.guava:11.0.1</id>
+              </artifact>
             </artifacts>
           </configuration>
         </execution>

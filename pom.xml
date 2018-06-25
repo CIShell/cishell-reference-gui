@@ -59,9 +59,9 @@
 		<repository>
 			<id>eclipse-orbit</id>
 			<layout>p2</layout>
-			<!-- <url>http://download.eclipse.org/tools/orbit/downloads/drops/R20151118145958/repository</url> -->
+			<url>http://download.eclipse.org/tools/orbit/downloads/drops/R20151118145958/repository</url>
 			<!-- <url>http://download.eclipse.org/tools/orbit/downloads/drops/R20160221192158/repository</url> -->
-			<url>http://download.eclipse.org/tools/orbit/downloads/drops/R20160520211859/repository</url>
+			<!-- <url>http://download.eclipse.org/tools/orbit/downloads/drops/R20160520211859/repository</url> -->
 			<!-- <url>http://download.eclipse.org/tools/orbit/downloads/drops/R20170307180635/repository</url>  -->
 			<releases>
 				<enabled>false</enabled>
@@ -113,10 +113,10 @@
 				<groupId>org.eclipse.tycho</groupId>
 				<artifactId>tycho-compiler-plugin</artifactId>
 				<version>${tychoVersion}</version>
-				<configuration>
+				<!-- <configuration>
 					<source>1.6</source>
 					<target>1.6</target>
-				</configuration>
+				</configuration> -->
 			</plugin>
 			<plugin>
 				<groupId>org.eclipse.tycho</groupId>

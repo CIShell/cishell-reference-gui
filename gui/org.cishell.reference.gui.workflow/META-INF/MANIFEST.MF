@@ -13,8 +13,8 @@ Require-Bundle: org.eclipse.ui,
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-ActivationPolicy: lazy
 Import-Package: 
- org.cishell.app.service.datamanager;version="1.0.0",
- org.cishell.app.service.scheduler;version="1.0.0",
+ org.cishell.app.service.datamanager,
+ org.cishell.app.service.scheduler,
  org.cishell.framework,
  org.cishell.framework.algorithm,
  org.cishell.framework.data,
@@ -22,9 +22,9 @@ Import-Package:
  org.cishell.reference.gui.menumanager.menu,
  org.cishell.reference.gui.workspace,
  org.cishell.reference.service.metatype,
- org.cishell.service.conversion;version="1.0.0",
- org.cishell.service.guibuilder;version="1.0.0",
- org.osgi.service.metatype;version="1.2.0"
+ org.cishell.service.conversion,
+ org.cishell.service.guibuilder,
+ org.osgi.service.metatype
 Eclipse-LazyStart: true
 Bundle-ClassPath: .,
  lib/xstream-1.4.3.jar
