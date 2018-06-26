@@ -2,7 +2,7 @@
 <feature
       id="org.cishell.reference.gui.brand.feature"
       label="CIShell Branding Feature"
-      version="1.0.0">
+      version="2.1.0.qualifier">
 
    <description url="http://cishell.org">
       Branded CIShell Reference GUI
@@ -38,13 +38,13 @@ Dr. Katy Borner (katy@indiana.edu)
 
    <includes
          id="org.cishell.reference.gui.feature"
-         version="1.0.0"/>
+         version="2.1.0.qualifier"/>
 
    <plugin
          id="org.cishell.reference.gui.brand.cishell"
          download-size="0"
          install-size="0"
-         version="0.4.0"
+         version="0.0.0"
          unpack="false"/>
 
 </feature>

@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+
 	<parent>
 		<groupId>org.cishell.reference.gui</groupId>
-		<artifactId>cishell-product</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<artifactId>deployment-module</artifactId>
+		<version>2.1.0-SNAPSHOT</version>
 	</parent>
-	<artifactId>cishell</artifactId>
-	<version>0.0.1</version>
-	<packaging>eclipse-repository</packaging>
 
+	<groupId>org.cishell.reference.gui</groupId>
+	<artifactId>cishell</artifactId>
+	<version>2.1.0-SNAPSHOT</version>
+	<packaging>eclipse-repository</packaging>
+	
 	<build>
 		<plugins>
 			<plugin>
@@ -33,18 +35,12 @@
 				</executions>
 				<configuration>
 					<includeAllDependencies>true</includeAllDependencies>
-
-<!-- 				We should use this to pack as a tar.gz file but Tycho can't handle the
+					<!-- 				We should use this to pack as a tar.gz file but Tycho can't handle the
 					permission for Mac and Linux builds when built in Windows. Since
 					we would like to fix the Mac's and Linux's executable permission
 					issue while compiling on Windows machine, we will convert ZIP to
 					TAR.GZ through ANT (See postMavenTasks.xml).
-					<formats>
-						<linux>tar.gz</linux>
-						<macosx>tar.gz</macosx>
-					</formats>
--->
-
+					<formats><linux>tar.gz</linux><macosx>tar.gz</macosx></formats>-->
 				</configuration>
 			</plugin>
 		</plugins>

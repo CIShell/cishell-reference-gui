@@ -70,22 +70,22 @@ Dr. Katy Borner (katy@indiana.edu)
    <features>
       <feature id="org.cishell.environment.equinox.feature"/>
       <feature id="org.cishell.feature"/>
-      <feature id="org.cishell.reference.feature" version="1.0.0"/>
-      <feature id="org.cishell.reference.database.feature" version="1.0.0"/>
+      <feature id="org.cishell.reference.feature"/>
+      <feature id="org.cishell.reference.database.feature"/>
       <feature id="org.cishell.reference.gui.feature"/>
       <feature id="org.cishell.reference.gui.brand.feature"/>
    </features>
 
    <configurations>
       <plugin id="org.cishell.service.autostart" autoStart="true" startLevel="4" />
-      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
-      <plugin id="org.eclipse.equinox.cm" autoStart="true" startLevel="3" />
-      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
-      <plugin id="org.eclipse.equinox.ds" autoStart="true" startLevel="3" />
-      <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="3" />
-      <plugin id="org.eclipse.equinox.log" autoStart="true" startLevel="3" />
-      <plugin id="org.eclipse.equinox.metatype" autoStart="true" startLevel="3" />
-      <plugin id="org.eclipse.update.configurator" autoStart="true" startLevel="3" />
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.cm" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.ds" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.log" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.equinox.metatype" autoStart="true" startLevel="4" />
+      <plugin id="org.eclipse.update.configurator" autoStart="true" startLevel="4" />
    </configurations>
 
 </product>

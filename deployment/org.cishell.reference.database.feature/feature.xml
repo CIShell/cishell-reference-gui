@@ -2,7 +2,7 @@
 <feature
       id="org.cishell.reference.database.feature"
       label="CIShell Reference Bundles Related to Internal Database"
-      version="1.0.0">
+      version="2.1.0.qualifier">
 
    <description url="http://cishell.org">
       CIShell Reference Bundles
@@ -58,13 +58,13 @@ Dr. Katy Borner (katy@indiana.edu)
          unpack="false"/>
 
    <plugin
-         id="org.apache.commons.dbcp"
+         id="commons-dbcp"
          download-size="0"
          install-size="0"
          version="0.0.0"/>
 
    <plugin
-         id="org.apache.commons.pool"
+         id="commons-pool"
          download-size="0"
          install-size="0"
          version="0.0.0"/>

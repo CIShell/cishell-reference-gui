@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Preference GUI
 Bundle-SymbolicName: org.cishell.reference.gui.prefs.swt
-Bundle-Version: 0.0.1
+Bundle-Version: 2.1.0.qualifier
 Bundle-ClassPath: .
 Require-Bundle: org.eclipse.ui.workbench
 Import-Package: org.cishell.framework,
