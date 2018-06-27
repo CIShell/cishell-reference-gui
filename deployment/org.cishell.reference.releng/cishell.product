@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="Cyberinfrastructure Shell" uid="cishell" id="org.cishell.reference.gui.brand.cishell.cishell" application="org.cishell.reference.gui.workspace.CIShellApplication" version="2.0" useFeatures="true" includeLaunchers="true">
+<product name="Cyberinfrastructure Shell" uid="cishell" id="org.cishell.reference.gui.brand.cishell.cishell" application="org.cishell.reference.gui.workspace.CIShellApplication" version="2.1.0" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
       <image path="../../../../../gui/org.cishell.reference.gui.brand.cishell/icons/about.gif"/>
