@@ -8,7 +8,7 @@ This repository assumes the CIShell core has been built using maven according to
 
 ## Build Instructions
 
-This repository is built using maven. You will need to run two commands:
+This repository is built using maven. You will need to run below command:
 ```
 mvn clean install
 ```
