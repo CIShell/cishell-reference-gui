@@ -26,8 +26,13 @@ Import-Package: org.cishell.app.service.datamanager,
  org.osgi.service.log,
  org.osgi.service.metatype,
  org.osgi.service.prefs
+Export-Package: org.cishell.reference.app.service.fileloader,
+ org.cishell.reference.app.service.filesaver,
+ org.cishell.reference.app.service.persistence 
 X-AutoStart: true
-Service-Component: OSGI-INF/load.xml, OSGI-INF/save.xml, OSGI-INF/view.xml, OSGI-INF/viewwith.xml
+Service-Component: OSGI-INF/load.xml, OSGI-INF/save.xml, OSGI-INF/view.xml, OSGI-INF/viewwith.xml, OSGI-INF/fileloader.xml, OSGI-INF/filesaver.xml
 Require-Bundle: org.eclipse.swt,
- org.eclipse.ui
+ org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.update.ui
 Bundle-RequiredExecutionEnvironment: J2SE-1.5

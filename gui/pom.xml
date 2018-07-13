@@ -18,6 +18,7 @@
     <module>org.cishell.reference.gui.prefs.swt</module>
     <module>org.cishell.reference.gui.scheduler</module>
     <module>org.cishell.reference.gui.workspace</module>
+    <module>org.cishell.utility.swt</module>
   </modules>
 
   <parent>
