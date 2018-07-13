@@ -162,6 +162,7 @@
 								<password>${password}</password>
 								<repoKey>libs-release-local</repoKey>
 								<snapshotRepoKey>libs-snapshot-local</snapshotRepoKey>
+								<excludePatterns>*.zip</excludePatterns>
 							</publisher>
 						</configuration>
 					</execution>
