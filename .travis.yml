@@ -20,7 +20,7 @@ script:
   - mvn clean deploy &&
     cd $TRAVIS_BUILD_DIR/deployment/org.cishell.p2/target/repository &&
     jfrog rt delete "reference-gui/updates/*" --quiet &&
-    jfrog rt upload "./*(.xml|.jar)" "reference-gui/updates/" --flat=false &&
+    jfrog rt upload "./*" "reference-gui/updates/" --flat=false &&
     cd $TRAVIS_BUILD_DIR/deployment/org.cishell.reference.releng/target/products-final &&
     jfrog rt delete "reference-gui/latest/*" --quiet &&
     jfrog rt upload "./*" "reference-gui/latest/" --flat=false
