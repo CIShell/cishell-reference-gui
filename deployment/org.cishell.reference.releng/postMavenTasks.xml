@@ -49,13 +49,13 @@
 
 		<foreach target="each-product-zip" param="product.zip">
 			<path>
-				<fileset dir="${input.dir}" includes="${product.name}-win32*.zip" casesensitive="false" />
+				<fileset dir="${input.dir}" includes="${product.name}-macosx*.zip ${product.name}-win32*.zip" casesensitive="false" />
 			</path>
 		</foreach>
 
 		<foreach target="each-product-tgz" param="product.zip">
 			<path>
-				<fileset dir="${input.dir}" includes="${product.name}-macosx*.zip ${product.name}-linux*.zip" casesensitive="false" />
+				<fileset dir="${input.dir}" includes="${product.name}-linux*.zip" casesensitive="false" />
 			</path>
 		</foreach>
 
