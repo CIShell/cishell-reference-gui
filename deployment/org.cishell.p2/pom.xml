@@ -21,6 +21,18 @@
 				<version>1.8</version>
 				<executions>
 					<execution>
+						<id>dev-p2-clean</id>
+						<phase>clean</phase>
+						<configuration>
+							<target>
+								<delete dir="build"/>
+							</target>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+					<execution>
 						<id>dev-p2-build</id>
 						<phase>install</phase>
 						<configuration>
