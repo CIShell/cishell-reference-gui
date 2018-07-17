@@ -1,6 +1,8 @@
 # CIShell Reference GUI
 
-This is the **Reference GUI** for the CIShell framework, see <http://cishell.org/>
+This is the **Reference GUI** for the CIShell framework, see <http://cishell.org/>  
+
+[![Build Status](https://travis-ci.com/CIShell/cishell-reference-gui.svg?branch=develop)](https://travis-ci.com/CIShell/cishell-reference-gui)
 
 ## Prerequesites
 
